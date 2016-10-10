@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Secciones y líneas generales de un documento HTML5</title>
+    <link rel='stylesheet' type = 'text/css' href="estilos.css" media = "all">
+  </head>
+  <body>
+    <header class="cabecera">
+      <h1><center>Secciones y líneas generales de un documento HTML5</center></h1>
+    </header>
+    <article class="contenido">
+      <p class = "parrafo">La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.</p>
+      <center><h1>Problemas resueltos por HTML5</h1></center>
+      <center><h1>La definición de la estructura de un documento en HTML 4 y su algoritmo de perfilado es muy tosco y genera numerosos problemas:</h1></center>
+      <p class = "parrafo">
+        <li>
+          <ol>1.	HTML5 quita la necesidad de elementos &LTdiv&GT; para definir secciones semánticas sin definir valores específicos para los atributos class, introduciendo un nuevo elemento, &LTsection&GT, el elemento de sección HTML.</ol>
+          <ol>2.	Mezclar varios documentos es difícil: la inclusión de un sub-documento en un documento principal. Esto se resuelve en HTML5 con los elementos de seccionado (&LTarticle&GT, &LTsection&GT, &LTnav&GT y &LTaside&GT) son siempre subsecciones de su sección ancestra más cercana.</ol>
+          <ol>3.	HTML5 introduce el elemento &LThgroup&GT que oculta todos los elementos de cabecera excepto el primero de más alto rango (por ejemplo, &LThgroup&GT&LTh1&GTJustine&LT/h1&GT&LTh2&GTLes Malheurs de la Vertu&LT/h2&GT&LT/hgroup&GT crea el perfil 1. Justine).</ol>
+          <ol>4.	Un documento puede tener secciones especiales conteniendo información relacionado que no es parte del flujo principal. HTML5 introduce el elemento &LTaside&GT permitiendo a dichas secciones no ser parte del perfil principal.</ol>
+          <ol>5.	Hay información relacionada no al documento pero si al sitio entero, como logos, menús, tablas de contenidos, o información de derechos de autor y notas legales. Para ese propósito, HTML5 introduce tres elementos de sección específicos: &LTnav&GT para colecciones de enlaces, como una tabla de contenidos, &LTfooter&GT y &LTheader&GT información relacionada con el sitio</ol>
+        </li>
+        De manera más general, HTML5 trae precisión a las características de seccionado y cabecera, permitiendo a los perfiles de documento ser predecibles y usados por el navegador para mejorar la experiencia de usuario.
+      </p>
+      <center><h1>El algoritmo de perfilado de HTML5</h1></center>
+      <center><h1>Definiendo secciones en HTML5</h1></center>
+      <p class="parrafo">Todo el contenido incluido dentro del elemento &LTbody&GT es parte de una sección. Las secciones en HTML5 pueden ser anidadas.
+        Además de la sección principal, definida por el elemento &LTbody&GT, los límites de la sección son definidos explícita o implícitamente.
+        La secciones definidas explícitamente son el contenido definido en las etiquetas &LTbody&GT, &LTsection&GT, &LTarticle&GT, &LTaside&GT, &LTfooter&GT, &LTheader&GT, y &LTnav&GT.
+        Nota: Cada sección puede tener su propia jerarquía de cabeceras. Por lo tanto, incluso una sección anidada puede tener un elemento &LTh1&GT. Consulte también
+        Definiendo cabeceras en HTML5.
+      </p>
+    </article>
+    <footer class = "pie">
+      <center>&copy; José Juan 2016</center>
+    </footer>
+  </body>
+</html>

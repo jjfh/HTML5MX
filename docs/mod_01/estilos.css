@@ -1,0 +1,35 @@
+.contenido {
+	background-color:green;
+	height: flex;
+	width: flex;
+	border: 5px solid Lightgray;
+	margin: 20px;
+	padding: 20px;
+
+}
+
+.cabecera, .pie{
+	background-color:#F8FBEF;
+	height: flex;
+	width: flex;
+	border: 2px solid Lightgray;
+	padding: 5px;
+}
+
+body{
+	background-color:red;
+}
+
+.parrafo{
+	font-size: 20px;
+}
+
+li { flex-grow: 1; }
+
+ol {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction: row;
+}
