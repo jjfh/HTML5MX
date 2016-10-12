@@ -1,0 +1,39 @@
+<!DOCTYPE html><html>
+<head>
+  <title>Date</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1 id="h1">José Juan</h1>
+  <h2 id="h2">La fecha y la hora son:</h2>
+  <div id="fecha"></div>
+  <p>Propiedades DOM:</p>
+  <div id="propiedadesDOM">
+
+  </div>
+
+ <script type="text/javascript">
+  var fecha = new Date();
+  var msj;
+
+  if      (fecha.getHours() < 7)  { msj = "Buenas noches";}
+  else if (fecha.getHours() < 12) { msj = "Buenos días";}
+  else if (fecha.getHours() < 21) { msj = "Buenas tardes";}
+  else                            { msj = "Buenas noches";}
+
+  document.getElementById("h1").innerHTML    = msj + " José Juan";
+  document.getElementById("fecha").innerHTML = fecha;
+
+  //Montamos un string con las propiedades y se las pasamos al innerHTML de nuestro div
+  var propiedadesDOM = "";
+  propiedadesDOM =
+    "innerHTML de h2: " + document.getElementById("h2").innerHTML + "<br>" +
+    "outerHTML de h1: " + document.getElementById("h1").outerHTML + "<br>" +
+    "location.href: "   + location.href + "<br>" +
+    "location: "        + location + "<br>" +
+    "screen.width: "    + screen.width + "<br>" +
+    "screen.heigth: "   + screen.height
+  document.getElementById("propiedadesDOM").innerHTML = propiedadesDOM;
+</script>
+</body>
+</html>
