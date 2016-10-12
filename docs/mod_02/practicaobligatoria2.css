@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'Awesome Font';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Awesome Font'),
+       url('/fonts/awesome-l.woff2') format('woff2'), 
+       url('/fonts/awesome-l.woff') format('woff'),
+       url('/fonts/awesome-l.ttf') format('ttf'),
+       url('/fonts/awesome-l.eot') format('eot');
+  unicode-range: U+000-5FF; /* Latin glyphs */
+}
+
+body{
+	margin:20px;
+	padding:10px;
+	background-color: #CCF;
+}
+
+	
+#marco {
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row;
+		}
+
+#marco article {
+	flex: 3 1 70%;
+	order: 2;
+	padding: 20px;
+	}
+	
+#marco aside {
+	flex: 1 6 20%;
+	order: 3;
+	padding: 15px;
+	border-radius: 20px 0 0 20px;
+	background: linear-gradient (45deg, #999, #FFF);
+	}
+
+header, footer {
+	display: block;
+	min-height: 10%;
+	}
+header{
+	text-align: center;
+	padding:0px;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: blue;
+	}
+	
+header h2{
+	font-size: 0.8em;
+	}
+footer{
+	padding: 20px;
+	text-align: center;
+	background: -webkit-linear-gradient(#CCC, #FFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#CCC, #FFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#CCC, #FFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#CCC, #FFF); /* Standard syntax */
+	border-radius: 50% 50% 0 0;
+	}
+
+hr { 
+	background-color: #FC6;
+	height: 1px; 
+}
+a {
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	color:blue;
+}
+	a:hover {
+	background-color: blue;
+	color:#FFF
+	}
+	
+h2,h3,h4{
+	color:#666;
+	text-align:left;
+	font-family: "Lucida Console", Monaco, monospace
+	}
+h1{ 
+	font-size:1.4em
+	text-align:center;
+	}
+h2{ 
+	font-size:1.3em}
+h3{ 
+	font-size:1.2em}	               
+p{
+	font-size:0.8em;
+	text-align:justify;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000
+	}
