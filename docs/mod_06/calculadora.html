@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/estilos.css" rel="stylesheet">
+    <!--Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="js\calculadora.js"></script>
+  </head>
+
+  <body onload="$('#num').focus();">
+
+    <div class="container">
+      <nav class="navbar navbar-inverse ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="PracticaObligatoria.html">MOOC</a>
+          </div>
+          <div class="collapse navbar-collapse" id="miMenu">
+            <ul class="nav navbar-nav">
+              <li><a href="puzle.html">Puzle</a></li>
+              <li><a href="#">Calculadora</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class ="nombre">
+        <p>Buenos días, bienvenido a la </p>
+        <p>calculadora de José Juan</p>
+      </div>
+      <div class="recuadro">
+        <p>
+          <input type="text" size="34" id="num">
+        </p>
+        <p>
+          <button id="cuadrado">x<sup>2</sup></button>
+          <button id="inverso">1/x</button>
+          <button id="raiz">&#8730;x</button>
+          <button id="entera">entera</button>
+        </p>
+        <p>
+          <button id="potencia">2<sup>n</sup></button>
+          <button id="factorial">n!</button>
+          <button id="sumatoria">Σx</button>
+          <button id="producto">&Pi;x</button>
+        <p>
+          <button id="exponencial">x<sup>y</sup></button>
+          <button id="sumar">+</button>
+          <button id="restar">-</button>
+          <button id="multiplicar">*</button>
+          <button id="dividir">/</button>
+          <button id="calcular">=</button>
+        </p>
+      </div>
+
+      <br>
+      <div class="panel-footer">José Juan Fernández</div>
+    </div>
+
+  </body>
+</html>
