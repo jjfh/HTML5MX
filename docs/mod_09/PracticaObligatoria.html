@@ -8,7 +8,7 @@
   <script type="text/javascript" src="gmaps.js"></script>
   <link rel="stylesheet" type="text/css" href="mypath.css" />
   <script type="text/javascript">
-    var map, lat, lng;
+    var map, lat, lng, latIni, lngIni;
 
     $(function(){
 
@@ -36,6 +36,8 @@
           success: function(position){
             lat = position.coords.latitude;  // guarda coords en lat y lng
             lng = position.coords.longitude;
+            latIni = lat;
+            lngIni = lng;
 
             map = new GMaps({  // muestra mapa centrado en coords [lat, lng]
               el: '#map',
@@ -52,11 +54,27 @@
       };
 
       geolocalizar();
+
+      $("#btnCompactar").on("click", function(){
+        map.cleanRoute();
+        map.removeMarkers();
+        map.addMarker({ lat: latIni, lng: lngIni});
+        map.addMarker({ lat: lat, lng: lng});
+        map.drawRoute({
+          origin: [latIni, lngIni],
+          destination: [lat, lng],
+          travelMode: 'driving',
+          strokeColor: '#000000',
+          strokeOpacity: 0.6,
+          strokeWeight: 5
+        })
+      })
+
     });
   </script>
 </head>
 <body>
-  <h1>Geolocalización</h1>
+  <h1>Geolocalización <button type="button" name="btnCompactar" id="btnCompactar">Compactar</button></h1>
 
   <div id="map"></div>
 </body>
